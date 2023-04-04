@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Racing Sans One'
+}
+
+body {
+    margin: 0;
+}
+
+.login{
+    float: left;
+    width: 30%;
+    border: 1px black solid;
+    margin-left: 9%;
+    text-align: center;
+    margin-top: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background: white
+}
+
+.register{
+    float: right;
+    width: 30%;
+    border: 1px black solid;
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 9%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background: white
+}
+
+.login * {
+    margin-bottom: 10px;
+}
+
+.login input {
+    width: 100%;
+    height: 40px;
+}
+
+.required {
+    color: red;
+}
+
+.rightInput {
+
+}
+.register *{
+    margin-bottom: 10px;
+}
+
+.register input{
+    width: 100%;
+    height: 40px;
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    background: #FCAE1E;
+    float: left;
+    display: flex;
+}
+
+.header .logo {
+    height: 72px;
+    margin-left: 6%;
+}
+
+.header h1 {
+    color: #139699;
+}
+
+.footer {
+    margin-top: 10%;
+    width: 100%;
+    height: 190px;
+    background: #FCAE1E;
+    float: left;
+}
+
+body {
+    background-image: url("../image/backgroundLogin.jpg");
+}
+
+.address, .describe, .about {
+    float: left;
+    font-size: 20px;
+    margin-left: 0px;
+    padding: 50px;
+    padding-left: 150px;
+    width: 33.33%;
+}
+
+.about span {
+    font-size: 30px;
+}
+
+.errorMessage {
+    color: red;
+}
+
