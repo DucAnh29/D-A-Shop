@@ -6,39 +6,56 @@ package model;
 
 /**
  *
- * @author Admin
+ * @author Duc Anh
  */
 public class Category {
-    private int CategoryID;
-    private String Name;
+    private int id;
+    private String name,describe,img;
 
     public Category() {
     }
 
-    public Category(int CategoryID, String Name) {
-        this.CategoryID = CategoryID;
-        this.Name = Name;
+    public Category(int id, String name, String describe, String img) {
+        this.id = id;
+        this.name = name;
+        this.describe = describe;
+        this.img = img;
     }
 
-    public int getCategoryID() {
-        return CategoryID;
+    public int getId() {
+        return id;
     }
 
-    public void setCategoryID(int CategoryID) {
-        this.CategoryID = CategoryID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Category{" + "CategoryID=" + CategoryID + ", Name=" + Name + '}';
+    public String getDescribe() {
+        return describe;
     }
+
+    public void setDescribe(String describe) {
+        this.describe = describe;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    
+   
+
     
 }

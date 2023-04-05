@@ -4,94 +4,96 @@
  */
 package model;
 
-import java.text.DecimalFormat;
-
 /**
  *
- * @author Admin
+ * @author Duc Anh
  */
 public class Product {
-    private int ProductID;
-    private String Name;
-    private double Price;
-    private String Image;
-    private String Description;
-    private int Quantity;
-    private int CategoryID;
+
+    private String id,name,describe;
+    private int quantity;
+    private double price,oldPrice;
+    private String image;
+    private Category category;
 
     public Product() {
     }
 
-    public Product(int ProductID, String Name, double Price, String Image, String Description,int Quantity ,int CategoryID) {
-        this.ProductID = ProductID;
-        this.Name = Name;
-        this.Price = Price;
-        this.Image = Image;
-        this.Description = Description;
-        this.Quantity = Quantity;
-        this.CategoryID = CategoryID;
+    public Product(String id, String name, String describe, int quantity, double price, double oldPrice, String image, Category category) {
+        this.id = id;
+        this.name = name;
+        this.describe = describe;
+        this.quantity = quantity;
+        this.price = price;
+        this.oldPrice = oldPrice;
+        this.image = image;
+        this.category = category;
     }
 
-    public int getProductID() {
-        return ProductID;
+    public String getId() {
+        return id;
     }
 
-    public void setProductID(int ProductID) {
-        this.ProductID = ProductID;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public double getPrice() {
-        return Price;
+    public String getDescribe() {
+        return describe;
     }
 
-    public void setPrice(double Price) {
-        this.Price = Price;
-    }
-
-    public String getImage() {
-        return Image;
-    }
-
-    public void setImage(String Image) {
-        this.Image = Image;
-    }
-    
-    public String getDescription() {
-        return Description;
-    }
-
-    public void setDescription(String Description) {
-        this.Description = Description;
-    }
-
-    public int getCategoryID() {
-        return CategoryID;
-    }
-
-    public void setCategoryID(int CategoryID) {
-        this.CategoryID = CategoryID;
-    }
-
-    public String getFormatedMoney() {
-        DecimalFormat format = new DecimalFormat("0.#");
-        return format.format(Price);
+    public void setDescribe(String describe) {
+        this.describe = describe;
     }
 
     public int getQuantity() {
-        return Quantity;
+        return quantity;
     }
 
-    public void setQuantity(int Quantity) {
-        this.Quantity = Quantity;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
-  
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getOldPrice() {
+        return oldPrice;
+    }
+
+    public void setOldPrice(double oldPrice) {
+        this.oldPrice = oldPrice;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    
+    
 }
